@@ -122,6 +122,7 @@ table {
   height: 200px;
   font-size: 17px;
   border-collapse: collapse;
+  border-style: hidden;
 }
 
 td {
