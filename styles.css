@@ -1,0 +1,180 @@
+body {
+  max-width: 1950px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img.header-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/** Headings and paragraphs **/
+
+h1 {
+  font-family: "Young Serif";
+  color: hsl(24, 5%, 18%);
+  font-size: 40px;
+  padding-left: 50px;
+}
+
+h2 {
+  font-family: "Outfit";
+  color: hsl(332, 51%, 32%);
+  padding: 20px;
+  font-size: 23px;
+}
+
+h3 {
+  font-family: "Young Serif";
+  color: hsl(14, 45%, 36%);
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+p {
+  font-family: "Outfit";
+  color: hsl(30, 10%, 34%);
+  line-height: 1.7;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+p.intro {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+/** divs and lists **/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: white;
+  width: 500px;
+  height: auto;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.prep-time {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+}
+
+ul.prep-list {
+  position: relative;
+  top: -25px;
+}
+
+li {
+  font-family: "Outfit";
+  padding: 5px;
+  color: hsl(30, 10%, 34%);
+  font-size: 17px;
+}
+
+li::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: bold;
+}
+
+span {
+  font-weight: bold;
+}
+
+.ingredients {
+  width: 450px;
+  height: auto;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin: auto;
+}
+
+.instructions {
+  width: 450px;
+  height: auto;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin: auto;
+}
+
+.nutrition {
+  width: 450px;
+  height: auto;
+  margin: auto;
+}
+
+/** Tables and attribution **/
+
+table {
+  font-family: "Outfit";
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+  border-collapse: collapse;
+}
+
+td {
+  padding-left: 80px;
+}
+
+td.bold {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.attribution {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Outfit";
+  margin-bottom: 20px;
+}
+
+a {
+  color: hsl(332, 51%, 32%);
+}
+
+/** MEDIA QUERIES **/
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+  img.header-image {
+    width: 700px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  .container {
+    width: 600px;
+    margin-top: 100px;
+  }
+
+  .prep-time {
+    width: 500px;
+  }
+  .ingredients {
+    width: 500px;
+  }
+  .instructions {
+    width: 500px;
+  }
+  .nutrition {
+    width: 500px;
+  }
+  table {
+    margin-bottom: 40px;
+  }
+}
